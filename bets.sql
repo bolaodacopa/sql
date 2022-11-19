@@ -8,4 +8,4 @@ left join bets b on (b.match_id = m.id)
 left join accounts a on (b.account_id = a.id)
 left join stages s on (m.stage_id = s.id)
 where s.name = 'GRUPOS'
-order by a.name, m.matchgroup
+order by a.name, m.matchgroup, m.matchcode 
